@@ -1,0 +1,38 @@
+/**
+ * mh theme for reveal.js.
+ *
+*/
+
+// Default mixins and settings -----------------
+@import "reveal-js/css/theme/template/mixins";
+@import "reveal-js/css/theme/template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$mainColor: #000;
+$headingFont: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$headingColor: #383D3D;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #fffaf6;
+$linkColor: #51483D;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #26351C;
+
+$heading1Size: 1.5em;
+$heading2Size: 1.2em;
+$heading3Size: 1.1em;
+$heading4Size: 1.0em;
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+// Theme template ------------------------------
+@import "reveal-js/css/theme/template/theme";
+// ---------------------------------------------
